@@ -1,9 +1,9 @@
 ---
 layout: page
-title: project 3
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
+title: Bachelor's project
+description: Project done as a Bachelor's thesis.
+img: assets/img/giraffe.HEIC
+redirect: https://github.com/asia281/UNESCO-Policy-Process-Analysis
 importance: 3
 category: work
 ---
