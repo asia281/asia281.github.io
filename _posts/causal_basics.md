@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Causal interference
-date: 2023-12-12 22:25:00
+date: 2023-12-12 00:00:00
 description: Causal interference
 tags: formatting diagrams
 categories: sample-posts
@@ -29,3 +29,5 @@ Potential outcome Y is independent from treatment.
 ## Ranomized control trial (RCT)
 
 Forcing people in groups to change their trial type in order to make group random. It removes confounder. Graphical interpretation: removing an edge.
+
+## Backdoor criterion
