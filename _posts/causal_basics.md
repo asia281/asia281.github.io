@@ -9,6 +9,9 @@ toc:
   sidebar: left
 ---
 
+### Sources
+
+If you want to start your adventure with causality, I recommend to watch the videos from [Causal Inference Course](https://www.bradyneal.com/causal-inference-course){:target="_blank"}
 
 What is the primary question of causal interference?
 
