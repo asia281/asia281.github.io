@@ -5,7 +5,11 @@ date: 2023-12-12 00:00:00
 description: Causal interference
 tags: formatting diagrams
 categories: sample-posts
+toc:
+  sidebar: left
 ---
+
+
 What is the primary question of causal interference?
 
 # Why is association not causation?
