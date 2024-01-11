@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Causal interference
-date: 2023-12-12 00:00:00
+date: 2024-01-02 00:00:00
 description: Causal interference
 tags: formatting diagrams
 categories: sample-posts
