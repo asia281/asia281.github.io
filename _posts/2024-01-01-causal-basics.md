@@ -73,8 +73,8 @@ T is a confounder that has been conditioned on
 
 Like the backdoor criterion, the front door criterion is used to identify and estimate causal relationships between variables. It is applicable when there is an unobserved or latent variable M that acts as an intermediate step between the X and the Y. 
 
-Conditions:
-1. $M$ completely mediates the effectofTonY(i.e.allcausalpathsfrom T to Y go through M).
+A set of variables $M$ satisfies the frontdoor criterion relative to $T$ and $Y$ if the following are true:
+1. $M$ completely mediates the effectof $T$ on $Y$ (i.e. all causal paths from T to Y go through M).
 2. There is no unblocked backdoor path from T to M.
 3. All backdoor paths from M to Y are blocked by T.
 

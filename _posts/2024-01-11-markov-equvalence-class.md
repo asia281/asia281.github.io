@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  GIT
+title:  Markov equivalence class
 date: 2023-12-12 00:00:00
-description: Trust Your Gradient; Gradient-based Intervention Targeting for Causal Discovery
+description: Why we can't discover 
 tags: formatting diagrams
 categories: sample-posts
 toc:
