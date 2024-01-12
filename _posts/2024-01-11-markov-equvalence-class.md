@@ -26,11 +26,11 @@ We start by considering separation between two singleton variables, x and y; the
 When exactly the same set of d-separation relations hold in two directed graphs, no matter whether respectively cyclic or acyclic, we say that they are Markov equivalent. 
 
 Two DAGs $$G_1, G_2$$ are Markov equivalent if and only if
-1. $G_1$ and $G_2$ contain the same vertices
-2. There is an edge between A and B in $G_1$ iff there is an edge between A and B in $G_2$;
-3. $G_1$ and $G_2$ have the same unshielded colliders.
+1. $$G_1$$ and $$G_2$$ contain the same vertices
+2. There is an edge between A and B in $$G_1$$ iff there is an edge between A and B in $$G_2$$;
+3. $$G_1$$ and $$G_2$$ have the same unshielded colliders.
 These conditions imply a fourth condition:
-4. $G_1$ and $G_2$ have the same unshielded noncolliders.
+4. $$G_1$$ and $$G_2$$ have the same unshielded noncolliders.
 
 ```mermaid
 sequenceDiagram
@@ -38,9 +38,9 @@ sequenceDiagram
     participant B
     participant C
     participant D
-    A->>B;
-    B->>C;
-    A->>C;
+    A-->>B;
+    B-->>C;
+    A-->>C;
 ```
 
 ## Future reading:
