@@ -19,6 +19,15 @@ We start by considering separation between two singleton variables, x and y; the
 - If a collider is a member of the conditioning set Z, or has a descendant in Z, then it no longer blocks any path that traces this collider.
 - x and y are d-connected, conditioned on a set Z of nodes, if there is a collider-free path between x and y that traverses no member of Z. If no such path exists, we say that x and y are d-separated by Z, We also say then that every path between x and y is "blocked" by Z.
 
+## Markov equivalence 
+When exactly the same set of d-separation relations hold in two directed graphs, no matter whether respectively cyclic or acyclic, we say that they are Markov equivalent. 
+
+Two DAGs $G_1, G_2$ are Markov equivalent if and only if
+1. $G_1$ and $G_2$ contain the same vertices
+2. There is an edge between A and B in $G_1$ iff there is an edge between A and B in $G_2$;
+3. $G_1$ and $G_2$ have the same unshielded colliders.
+These conditions imply a fourth condition:
+4. $G_1$ and $G_2$ have the same unshielded noncolliders.
 
 ## Future reading:
 
