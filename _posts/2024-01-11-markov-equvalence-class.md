@@ -4,6 +4,9 @@ title:  Markov equivalence class
 date: 2024-01-11 00:00:00
 description: Why we can't discover 
 categories: causality
+mermaid:
+    enabled: true
+    zoomable: true
 toc:
   sidebar: left
 ---
@@ -28,6 +31,17 @@ Two DAGs $G_1, G_2$ are Markov equivalent if and only if
 3. $G_1$ and $G_2$ have the same unshielded colliders.
 These conditions imply a fourth condition:
 4. $G_1$ and $G_2$ have the same unshielded noncolliders.
+
+```mermaid
+sequenceDiagram
+    participant A
+    participant B
+    participant C
+    participant D
+    A->>B 
+    B->>C
+    A->>C
+```
 
 ## Future reading:
 
