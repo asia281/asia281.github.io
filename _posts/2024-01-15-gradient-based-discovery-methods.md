@@ -18,7 +18,7 @@ While observational data alone is in general not sufficient to identify the DAG,
 
 # Gradient-based discovery methods
 
-## ENCO [github](https://github.com/phlippe/ENCO){:target="_blank"}{:rel="noopener noreferrer"}
+## ENCO [github](https://github.com/phlippe/ENCO){:target="_blank" rel="noopener noreferrer"}
 
 ## DCDI
 
