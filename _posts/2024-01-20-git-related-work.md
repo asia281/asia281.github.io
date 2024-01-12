@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Related work to GIT
-date: 2023-12-12 00:00:00
+date: 2024-01-20 00:00:00
 description: Related work to Trust your gradient -- GIT discovery method 
 tags: formatting diagrams
 categories: sample-posts

@@ -3,8 +3,7 @@ layout: post
 title:  Causal interference
 date: 2024-01-01 00:00:00
 description: Causal interference
-tags: formatting diagrams
-categories: sample-posts
+categories: causality
 toc:
   sidebar: left
 ---
@@ -83,3 +82,15 @@ A set of variables $M$ satisfies the frontdoor criterion relative to $T$ and $Y$
 If $Y, M, T$ satisfy criterion and we have positivity, then:
 $$ P(y|do(t)) = \sum_m P(m|t) \sum _{t'} P(y|m, t')P(t') $$
 
+
+# Other criterions
+
+**Necessary criterion:** For each backdoor path from $T$ to any child $M$ of $T$ that is an ancestor of $Y$, we must block the path. It's not sufficient criterion.
+
+**Unconfounded children criterion**: All backdoor paths from the treatment variable T to all of its children that are ancestors of Y with a single conditioning set must be block. Sufficient when T is a single variable. 
+
+# Currently, we usually try to solve one of the following problems:
+
+1. **Causal inference**: How much would some specific variables (features or the label) change if we manipulate the value of another specific variable? 
+
+2. **Causal discovery**: By modifying the value of which variables could we change the value of another variable?

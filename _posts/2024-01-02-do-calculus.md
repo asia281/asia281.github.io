@@ -3,8 +3,7 @@ layout: post
 title:  Causal interference
 date: 2024-01-02 00:00:00
 description: Causal interference
-tags: formatting diagrams
-categories: sample-posts
+categories: causality
 toc:
   sidebar: left
 ---
