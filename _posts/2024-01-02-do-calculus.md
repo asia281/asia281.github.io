@@ -27,3 +27,11 @@ P(y|do(z),w)=P(y|z,w) if Y ?GZ Z|W
 where $Z(W)$ denotes the set of nodes of $Z$ that aren't ancestors of any node of $W$ in $G_T$.
 
 $$ P(y|do(z),w)=P(y|w) if Y ?GZ(W) Z|W $$
+
+## Examples
+$$P_G(y|do(x)) = p(y)$$ if $Y$ is a non-descendant of $X$.
+
+If $Y$ is not a parent of $X$ then
+$$P_G (y | do(X = \hat{x})) = \sum_{pa_X} P(y | \hat{x}, pa_X ) p(pa_X )$$ 
+
+Whenever we can compute the marginalized intervention distribution p(y | do(X = xˆ)) by a summation 􏰈z p(y | xˆ, z) p(z) as in (2), we call the set Z a valid adjustment set for the intervention $Y | do(X)$. We see that $Z = PA^G_X$ is a valid adjustment set for Y | do(X) (for any Y ). 

@@ -72,25 +72,37 @@ T is a confounder that has been conditioned on
 
 Like the backdoor criterion, the front door criterion is used to identify and estimate causal relationships between variables. It is applicable when there is an unobserved or latent variable M that acts as an intermediate step between the X and the Y. 
 
-A set of variables $M$ satisfies the frontdoor criterion relative to $T$ and $Y$ if the following are true:
-1. $M$ completely mediates the effectof $T$ on $Y$ (i.e. all causal paths from T to Y go through M).
+A set of variables $$M$$ satisfies the frontdoor criterion relative to $$T$$ and $$Y$$ if the following are true:
+1. $$M$$ completely mediates the effectof $$T$$ on $$Y$$ (i.e. all causal paths from T to Y go through M).
 2. There is no unblocked backdoor path from T to M.
 3. All backdoor paths from M to Y are blocked by T.
 
 
 # Adjustment
-If $Y, M, T$ satisfy criterion and we have positivity, then:
+If $$Y, M, T$$ satisfy criterion and we have positivity, then:
 $$ P(y|do(t)) = \sum_m P(m|t) \sum _{t'} P(y|m, t')P(t') $$
 
 
 # Other criterions
 
-**Necessary criterion:** For each backdoor path from $T$ to any child $M$ of $T$ that is an ancestor of $Y$, we must block the path. It's not sufficient criterion.
+**Necessary criterion:** For each backdoor path from $$T$$ to any child $$M$$ of $$T$$ that is an ancestor of $$Y$$, we must block the path. It's not sufficient criterion.
 
 **Unconfounded children criterion**: All backdoor paths from the treatment variable T to all of its children that are ancestors of Y with a single conditioning set must be block. Sufficient when T is a single variable. 
+
+![Backdoor-example](/assets/img/unconfounded_child.png)
 
 # Currently, we usually try to solve one of the following problems:
 
 1. **Causal inference**: How much would some specific variables (features or the label) change if we manipulate the value of another specific variable? 
 
 2. **Causal discovery**: By modifying the value of which variables could we change the value of another variable?
+
+# Propensity score 
+
+$$e(w) = P(T=1 | W)$$
+
+e is only 1-dimentional
+
+Given positivity:
+
+$$(Y(0), Y(1)) \perp T | W \arrow (Y(0), Y(1)) \perp T | e(W)$$
