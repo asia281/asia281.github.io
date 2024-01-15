@@ -26,9 +26,16 @@ On the other hand, these methods search through the space of all possible causal
 
 ## Gradient-based discovery methods
 are score-based methods that avoid the combinatorial greedy search over DAGs by using gradient-based methods. Thereby, the adjacency matrix is parameterized by weights that represent linear factors or probabilities of having an edge between a pair of nodes. The main challenge of such methods is how to limit the search space to acyclic graphs. One common approach is to view the search as a constrained optimization problem and deploy an augmented Lagrangian procedure to solve it (Zheng et al., 2018; 2020; Yu et al., 2019; Brouillard et al., 2020), including NOTEARS (Zheng et al., 2018) and DCDI (Brouillard et al., 2020). Alternatively, Ke et al. (2019) propose to use a regularization term penalizing cyclic graphs while allowing unconstrained optimization. However, the regularizer must be designed and weighted such that the correct, acyclic causal graph is the global optimum of the score function.
+# Classical discovery methods
+
+## PC
+
+## FCI
 
 
-## ENCO [github](https://github.com/phlippe/ENCO){:target="_blank"}
+# Gradient-based discovery methods
+
+## ENCO [github](https://github.com/phlippe/ENCO){:target="_blank" rel="noopener noreferrer"}
 
 In ENCO, the structural parameters for an edge (i,j) are represented by two parameters ρi,j = [θi,j , γi,j ]. Intuitively, γi,j corresponds the existence of the edge, while θi,j = −θj,i is associated with the direction of the edge
 
