@@ -38,9 +38,9 @@ sequenceDiagram
     participant B
     participant C
     participant D
-    A-->>B;
-    B-->>C;
-    A-->>C;
+    A-->>B: A
+    B-->>C: B
+    A-->>C: C
 ```
 
 ## Future reading:
