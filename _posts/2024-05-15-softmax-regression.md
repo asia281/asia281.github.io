@@ -11,6 +11,8 @@ toc:
 
 # Softmax regression
 
+Softmax because soft approximation of max. This sort of generalizes sigmoid regression. But in sigmoid regression we only train one regression, and not two!
+
 Sometimes we want to classify the the object rather that regress. In ML we often do soft assignments, i.e., to assess the probability that each category applies.
 
 ## One-hot encoding
